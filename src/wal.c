@@ -1,4 +1,4 @@
-/*
+﻿/*
 ** 2010 February 1
 **
 ** The author disclaims否认 copyright to this source code.  In place of
@@ -1082,7 +1082,7 @@ static int walIndexRecover(Wal *pWal){  返回是否加锁进行恢复，不成�
   
   rc = walLockExclusive(pWal, iLock, nLock); 是否获取排它锁
   
-  if( rc ){  如果获取成功，
+  if( rc ){  // 如果获取成功，
     return rc; 返回 rc
   }
   WALTRACE(("WAL%p: recovery begin...\n", pWal));
